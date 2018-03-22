@@ -1,12 +1,13 @@
-var a = "apple";
-var b = 5;
 
-if (isNaN(a)){
+var str = "hello, world";
+var str2= str.slice(2, 9);
 
-    console.log("that isnt even a number, thickie");
+console.log(str2);
 
-} else{
 
-    console.log("meaning of life is " + (a * b));
 
-}
+
+var tags = "meat, ham, salami, pork, beef, chicken";
+var tagsArray = tags.split(",");
+
+console.log(tagsArray);
