@@ -1,19 +1,12 @@
+var a = "apple";
+var b = 5;
 
-function getAverage (a, b){
+if (isNaN(a)){
 
-    var average = (a + b) / 2; //local variable
-    console.log(average);
-    return average;
+    console.log("that isnt even a number, thickie");
 
-}
+} else{
 
-var myResult = getAverage(7, 11); //global variable
-
-
-function logResult(){
-
-    console.log("the average is " + myResult + " inside the function");
+    console.log("meaning of life is " + (a * b));
 
 }
-
-logResult();
