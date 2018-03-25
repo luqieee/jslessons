@@ -1,35 +1,18 @@
-var birthday = new Date(1992, 08, 20, 4, 15, 25);
-var birthday2 = new Date(1992, 08, 20, 4, 15, 25);
 
-console.log(birthday.getMonth());
+var content = document.getElementById("content");
+var button = document.getElementById("show-more");
 
-console.log(birthday.getFullYear());
+button.onclick = function(){
 
-console.log(birthday.getDate());
+  if(content.className == "open"){
+      //shrink the box
+      content.className = "";
+      button.innerHTML = "Show More";
 
-console.log(birthday.getDay());
+  }  else{
+      //expand he box
+   content.className = "open";
+   button.innerHTML = "Show Less";
+  }
 
-console.log(birthday.getHours());
-
-console.log(birthday.getTime());
-
-
-if(birthday == birthday2){
-
-    console.log("equal");
-
-} else{
-
-    console.log("not equal");
-
-}
-
-if(birthday.getTime() == birthday2.getTime()){
-
-    console.log("equal");
-
-} else{
-
-    console.log("not equal");
-
-}
+};
